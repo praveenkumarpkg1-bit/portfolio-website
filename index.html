@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Praveen Kumar | Front-End Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav-inner">
+      <div style="display:flex;gap:16px;align-items:center;">
+        <div class="brand">Praveen Kumar</div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn btn-ghost" title="Toggle theme">🌙</button>
+        <div class="hamburger" id="hamb">
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="container">
+      <div class="hero-grid">
+        <div class="hero-card reveal">
+          <h1 class="headline">Hi, I'm <span style="color:var(--primary)">Praveen</span> 👋</h1>
+          <p class="sub">Front-End Developer building modern, responsive web experiences.</p>
+
+          <p style="margin-bottom:14px">
+            <span class="small">I build</span>
+            <span class="type-rotator" aria-hidden="true">
+              <span class="rot">interactive UIs</span>
+            </span>
+            <span class="small"> &amp; delightful interfaces</span>
+          </p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-ghost" href="#contact">Contact Me</a>
+          </div>
+
+          <div style="margin-top:18px;" class="small">Tip: click <strong>View Projects</strong> or press <kbd>P</kbd> to open projects.</div>
+        </div>
+
+        <div class="profile reveal">
+          <div class="avatar" aria-hidden="true">PK</div>
+          <div style="text-align:center">
+            <div style="font-weight:700">Front-End Developer</div>
+            <div class="meta">HTML • CSS • JavaScript • Responsive UI</div>
+            <div style="margin-top:12px">
+              <a class="btn btn-ghost" href="#" onclick="downloadResume(event)">Download CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <div class="section-title reveal">About Me</div>
+      <div class="card reveal" style="margin-top:12px">
+        <p>I'm passionate about turning design into clean, accessible, and performant front-end code. I focus on responsive interfaces, small delightful animations, and thoughtful user interactions.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="container">
+      <div class="section-title reveal">Skills</div>
+      <div class="card reveal" style="margin-top:12px">
+        <div class="skills">
+          <div class="skill">HTML</div>
+          <div class="skill">CSS (Flexbox / Grid)</div>
+          <div class="skill">JavaScript (ES6+)</div>
+          <div class="skill">Responsive Design</div>
+          <div class="skill">Accessibility</div>
+          <div class="skill">Performance</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container">
+      <div class="section-title reveal">Projects</div>
+      <div class="projects-grid" style="margin-top:12px">
+        <div class="project card reveal">
+          <h3>Portfolio Website</h3>
+          <p class="tech">HTML • CSS • JS</p>
+          <p class="small">A responsive portfolio with animations and dark mode.</p>
+        </div>
+
+        <div class="project card reveal">
+          <h3>E-commerce UI</h3>
+          <p class="tech">HTML • CSS • JS</p>
+          <p class="small">Responsive product grid with filters and micro-interactions.</p>
+        </div>
+
+        <div class="project card reveal">
+          <h3>Weather App</h3>
+          <p class="tech">HTML • JS • API</p>
+          <p class="small">Fetches live weather and shows dynamic backgrounds.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <div class="section-title reveal">Contact</div>
+      <div class="card reveal" style="margin-top:12px">
+        <form id="contactForm">
+          <div class="form-grid">
+            <input type="text" id="name" placeholder="Your name" required />
+            <input type="email" id="email" placeholder="Your email" required />
+            <textarea id="message" placeholder="Message" required></textarea>
+          </div>
+          <div style="margin-top:12px; display:flex; gap:12px; align-items:center;">
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <div class="small">Or email me at <strong>praveenpkg07@gmail.com.com</strong></div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="small">© <span id="year"></span> Praveen Kumar — Built with ❤️</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
